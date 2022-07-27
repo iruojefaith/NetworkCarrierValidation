@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>IRecharge</title>
+	</head>
+	<body>
+		<section id="main-section">
+			<form method="POST" action="..." onsubmit="return checkForm(this);">
+				<div class="header">
+					<h1>IRecharge</h1>
+					<p class="welcome">
+						Welcome Faith !!
+						<img
+							class="img-icon"
+							src="https://png2.cleanpng.com/sh/48c0320b4c18982a54ad47129edbfc4d/L0KzQYm3UsAzN6dtj5H0aYP2gLBuTfVud5tuRdpAZz3ofbF7ifNwdl5qhdHzaT3pcbTsTgBvb155itN3c4Dkgrb1lL1qdZJsfZ8AYUe4RIHpWfE1PJU8SpCBOEK2R4mBUME2OWg7S6UCMkG5R4S1kP5o/kisspng-emoji-hug-emoticon-emoji-face-png-transparent-image-5a7540b9a44d72.682378801517633721673.png"
+						/>
+					</p>
+				</div>
+				<div class="form-row">
+					<div class="input-box ">
+						<label for="phone number">Phone No</label> <br />
+						<div class="input-div">
+							<input type="tel" name="phone number" id="phone_number" class="phone_number input-position" placeholder="+234-800-000-0000"
+                        pattern="^(\+\d{3}|[0-9])\d{10}$"  autocomplete="on" required>
+						<img  src="" class="img logo"  width="25px" />
+						</div>
+					</div>
+
+					<p class="error">Wrong phone number</p>
+
+					<label for="amount">Amount</label>
+					<div class="input-box amount">
+						<select name=""  >
+							<option value="">$</option>
+							<option value="">#</option>
+							<option value="">£</option>
+						</select>/>
+						<input  class="h-input" placeholder="00.00" name="amount"/>
+					</div>
+					<div class="input-box">
+						<label for="password">Password</label> <br />
+						<input
+							name="password"
+							type="password"
+							id="passsword"
+							placeholder="Enter your password"
+							onkeyup="CheckPassword(this)"
+						/>
+						<span id="error"  style="color:red"></span>
+					</div>
+					<div class="btn">
+						<button type="submit">LOGIN</button>
+					</div>
+				</div>
+			</form>
+		</section>
+
+		<script type="text/javascript" src="App.js"></script>
+	</body>
+</html>
